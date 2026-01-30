@@ -103,18 +103,20 @@ export default function App() {
 {`// Core Focus Areas
 const THESIS = {
   sectors: [
-    'Enterprise SaaS',
-    'Developer Tools',
-    'AI/ML Infrastructure',
-    'Fintech'
+    'Vertical B2B Software',
+    'Healthcare & Life Science',
+    'Energy & Sustainability',
+    'Cybersecurity',
+    'Professional Services Tech'
   ],
-  stage: 'Seed to Series A',
-  approach: 'Hands-on technical partnership',
+  stage: 'Growth Equity & Buyout',
+  approach: 'Buy-and-build platform strategy',
   geography: 'DACH + Europe'
 };
 
-// We invest in builders who think in systems,
-// code in production, and ship relentlessly.`}
+// We partner with market leaders in vertical software,
+// building category-defining platforms through operational
+// excellence and strategic add-on acquisitions.`}
             </pre>
           </div>
         </section>
