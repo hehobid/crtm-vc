@@ -225,9 +225,10 @@ const THESIS = {
 
         {/* Portfolio Section */}
         <section id="portfolio" className="max-w-7xl mx-auto px-6 py-20">
-          <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+          <h2 className="text-3xl font-bold mb-2 flex items-center gap-3">
             <span className="text-[#5a7fa6]">{'>'}</span> PORTFOLIO
           </h2>
+          <p className="text-[#5a7fa6] text-sm mb-8 font-mono">{'// via BID Equity GmbH'}</p>
           <div className="grid gap-3">
             {portfolioCompanies.map((company, i) => (
               <div 
