@@ -92,6 +92,14 @@ const portfolioCompanies = [
     url: 'https://justrelate.com'
   },
   { 
+    name: 'AB Cube', 
+    year: '2019', 
+    desc: 'All-in-one pharmacovigilance and safety management platform',
+    detail: 'Nearly 20 years of expertise. SafetyEasy® Suite powers vigilance automation for biotechs, CROs, health authorities, and global pharma companies.',
+    sector: 'Life Science',
+    url: 'https://ab-cube.com'
+  },
+  { 
     name: 'EvidentIQ', 
     year: '2019', 
     desc: 'End-to-end eClinical solutions for life sciences',
@@ -181,7 +189,7 @@ export default function App() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
-              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x0D</div>
+              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x0E</div>
               <div className="text-[#5a7fa6] text-sm">PORTFOLIO COMPANIES</div>
             </div>
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
