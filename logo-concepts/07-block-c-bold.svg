@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <!-- Bold blocky C -->
+  <path d="M360 96 L152 96 L96 152 L96 360 L152 416 L360 416 L360 336 L200 336 L176 312 L176 200 L200 176 L360 176 Z" 
+        fill="#00ff9f"/>
+  <!-- Accent corner -->
+  <path d="M360 96 L360 176 L300 176 L300 96 Z" fill="#00d4ff" opacity="0.6"/>
+  <path d="M360 336 L360 416 L300 416 L300 336 Z" fill="#00d4ff" opacity="0.6"/>
+</svg>

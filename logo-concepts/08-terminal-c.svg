@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <!-- Monospace C with terminal aesthetic -->
+  <text x="256" y="380" 
+        font-family="Monaco, 'Courier New', monospace" 
+        font-size="400" 
+        font-weight="bold" 
+        fill="#00ff9f" 
+        text-anchor="middle">C</text>
+  <!-- Scanline effect -->
+  <line x1="80" y1="256" x2="432" y2="256" stroke="#00d4ff" stroke-width="2" opacity="0.3"/>
+  <!-- Corner brackets -->
+  <path d="M60 60 L60 120 M60 60 L120 60" stroke="#00ff9f" stroke-width="6" fill="none" opacity="0.5"/>
+  <path d="M452 60 L452 120 M452 60 L392 60" stroke="#00ff9f" stroke-width="6" fill="none" opacity="0.5"/>
+  <path d="M60 452 L60 392 M60 452 L120 452" stroke="#00ff9f" stroke-width="6" fill="none" opacity="0.5"/>
+  <path d="M452 452 L452 392 M452 452 L392 452" stroke="#00ff9f" stroke-width="6" fill="none" opacity="0.5"/>
+</svg>

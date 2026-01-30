@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <!-- Terminal window frame -->
+  <rect x="40" y="80" width="432" height="352" rx="8" fill="none" stroke="#1e3a5f" stroke-width="4"/>
+  <!-- Window dots -->
+  <circle cx="75" cy="110" r="10" fill="#ff5f56"/>
+  <circle cx="105" cy="110" r="10" fill="#ffbd2e"/>
+  <circle cx="135" cy="110" r="10" fill="#27ca40"/>
+  <!-- Terminal line -->
+  <rect x="40" y="130" width="432" height="2" fill="#1e3a5f"/>
+  <!-- Prompt -->
+  <text x="70" y="260" font-family="monospace" font-size="90" font-weight="bold" fill="#5a7fa6">&gt;</text>
+  <text x="150" y="260" font-family="monospace" font-size="90" font-weight="bold" fill="#00ff9f">crtm</text>
+  <!-- Cursor -->
+  <rect x="420" y="185" width="20" height="75" fill="#00ff9f" opacity="0.8"/>
+  <!-- Subtext -->
+  <text x="70" y="360" font-family="monospace" font-size="32" fill="#5a7fa6">.vc</text>
+</svg>

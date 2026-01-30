@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <!-- Hexagon shape -->
+  <polygon points="256,50 450,150 450,362 256,462 62,362 62,150" fill="none" stroke="#00ff9f" stroke-width="8"/>
+  <polygon points="256,80 420,165 420,347 256,432 92,347 92,165" fill="none" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="256" y="235" font-family="monospace" font-size="60" font-weight="bold" fill="#5a7fa6" text-anchor="middle">0x</text>
+  <text x="256" y="330" font-family="monospace" font-size="100" font-weight="bold" fill="#00ff9f" text-anchor="middle">CV</text>
+</svg>

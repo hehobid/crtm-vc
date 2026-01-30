@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <text x="50" y="340" font-family="monospace" font-size="140" font-weight="bold" fill="#5a7fa6">&lt;</text>
+  <text x="150" y="340" font-family="monospace" font-size="160" font-weight="bold" fill="#00ff9f">CV</text>
+  <text x="370" y="340" font-family="monospace" font-size="140" font-weight="bold" fill="#5a7fa6">/&gt;</text>
+</svg>

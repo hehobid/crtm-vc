@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <!-- Circuit board style C -->
+  <!-- Main C outline -->
+  <path d="M380 100 L160 100 L100 160 L100 352 L160 412 L380 412" 
+        stroke="#00ff9f" stroke-width="40" fill="none" stroke-linecap="square"/>
+  <!-- Circuit nodes -->
+  <circle cx="380" cy="100" r="20" fill="#00d4ff"/>
+  <circle cx="160" cy="100" r="15" fill="#00ff9f"/>
+  <circle cx="100" cy="160" r="15" fill="#00ff9f"/>
+  <circle cx="100" cy="352" r="15" fill="#00ff9f"/>
+  <circle cx="160" cy="412" r="15" fill="#00ff9f"/>
+  <circle cx="380" cy="412" r="20" fill="#00d4ff"/>
+  <!-- Circuit traces -->
+  <line x1="380" y1="100" x2="440" y2="100" stroke="#00d4ff" stroke-width="4"/>
+  <line x1="380" y1="412" x2="440" y2="412" stroke="#00d4ff" stroke-width="4"/>
+  <circle cx="440" cy="100" r="8" fill="none" stroke="#00d4ff" stroke-width="3"/>
+  <circle cx="440" cy="412" r="8" fill="none" stroke="#00d4ff" stroke-width="3"/>
+</svg>

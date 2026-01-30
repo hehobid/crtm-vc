@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a1628"/>
+  <!-- Clean pixel C - very clear shape -->
+  <!-- Top row -->
+  <rect x="156" y="56" width="60" height="60" fill="#00ff9f"/>
+  <rect x="216" y="56" width="60" height="60" fill="#00ff9f"/>
+  <rect x="276" y="56" width="60" height="60" fill="#00ff9f"/>
+  <rect x="336" y="56" width="60" height="60" fill="#00d4ff"/>
+  
+  <!-- Second row -->
+  <rect x="96" y="116" width="60" height="60" fill="#00ff9f"/>
+  <rect x="156" y="116" width="60" height="60" fill="#00ff9f" opacity="0.3"/>
+  
+  <!-- Left side -->
+  <rect x="56" y="176" width="60" height="60" fill="#00ff9f"/>
+  <rect x="56" y="236" width="60" height="60" fill="#00ff9f"/>
+  <rect x="56" y="296" width="60" height="60" fill="#00ff9f"/>
+  
+  <!-- Second to last row -->
+  <rect x="96" y="356" width="60" height="60" fill="#00ff9f"/>
+  <rect x="156" y="356" width="60" height="60" fill="#00ff9f" opacity="0.3"/>
+  
+  <!-- Bottom row -->
+  <rect x="156" y="416" width="60" height="60" fill="#00ff9f"/>
+  <rect x="216" y="416" width="60" height="60" fill="#00ff9f"/>
+  <rect x="276" y="416" width="60" height="60" fill="#00ff9f"/>
+  <rect x="336" y="416" width="60" height="60" fill="#00d4ff"/>
+</svg>
