@@ -8,7 +8,7 @@ const portfolioCompanies = [
     year: '2026', 
     desc: 'Platform for decentralized marketing',
     detail: 'Enabling brands to collaborate with 50+ distribution partners. Centralized asset management with local customization for franchisees and retailers.',
-    sector: 'Marketing Tech',
+    sector: 'Vertical SaaS',
     url: 'https://local-brand-x.com'
   },
   { 
@@ -16,7 +16,7 @@ const portfolioCompanies = [
     year: '2025', 
     desc: 'Simplified Android mobile device management',
     detail: 'Intuitive MDM solution with kiosk mode, app management, and security compliance for enterprise fleets.',
-    sector: 'Enterprise Tech',
+    sector: 'Vertical SaaS',
     url: 'https://tinymdm.net'
   },
   { 
@@ -24,7 +24,7 @@ const portfolioCompanies = [
     year: '2025', 
     desc: 'Cloud-based insurance broker management platform',
     detail: 'AI-powered document processing, customer portals, and automated workflows for modern insurance brokers.',
-    sector: 'Insurtech',
+    sector: 'Vertical SaaS',
     url: 'https://insurgo.de'
   },
   { 
@@ -32,7 +32,7 @@ const portfolioCompanies = [
     year: '2025', 
     desc: '3D simulation software for aesthetic medicine',
     detail: 'World-leading 3D visualization for cosmetic surgery planning. Used by surgeons globally.',
-    sector: 'Healthcare',
+    sector: 'Healthcare & Life Science',
     url: 'https://crisalix.com'
   },
   { 
@@ -56,7 +56,7 @@ const portfolioCompanies = [
     year: '2023', 
     desc: 'Visitor and member engagement for cultural institutions',
     detail: 'Digital membership, mobile engagement, and AR solutions for museums and cultural organizations worldwide.',
-    sector: 'Culture Tech',
+    sector: 'Vertical SaaS',
     url: 'https://cuseum.com'
   },
   { 
@@ -64,7 +64,7 @@ const portfolioCompanies = [
     year: '2022', 
     desc: 'Leading CRM/ERP platform for agencies and professional services',
     detail: '10,000+ CRM customers. #1 in DACH for agencies and consultancies with 80%+ recurring revenue.',
-    sector: 'B2B SaaS',
+    sector: 'Professional Services',
     url: 'https://hellohq.io'
   },
   { 
@@ -80,7 +80,7 @@ const portfolioCompanies = [
     year: '2021', 
     desc: 'Enterprise energy data management and sustainability',
     detail: '33,000 users managing 260,000 buildings in 60 countries. Monitoring $5B+ in energy spend.',
-    sector: 'Energy Tech',
+    sector: 'Energy & Sustainability',
     url: 'https://esightenergy.com'
   },
   { 
@@ -88,7 +88,7 @@ const portfolioCompanies = [
     year: '2020', 
     desc: 'All-in-one customer experience platform for CRM and CMS',
     detail: '100,000+ active users, 250+ enterprise customers. Integrated etracker for analytics capabilities.',
-    sector: 'B2B SaaS',
+    sector: 'Professional Services',
     url: 'https://justrelate.com'
   },
   { 
@@ -96,7 +96,7 @@ const portfolioCompanies = [
     year: '2019', 
     desc: 'All-in-one pharmacovigilance and safety management platform',
     detail: 'Nearly 20 years of expertise. SafetyEasy® Suite powers vigilance automation for biotechs, CROs, health authorities, and global pharma companies.',
-    sector: 'Life Science',
+    sector: 'Healthcare & Life Science',
     url: 'https://ab-cube.com'
   },
   { 
@@ -104,7 +104,7 @@ const portfolioCompanies = [
     year: '2019', 
     desc: 'End-to-end eClinical solutions for life sciences',
     detail: '3,500+ clinical studies, 25M patients across 83 countries. Trusted by 15 of the top 20 pharma companies worldwide.',
-    sector: 'Life Science',
+    sector: 'Healthcare & Life Science',
     url: 'https://evidentiq.com'
   },
   { 
@@ -112,7 +112,7 @@ const portfolioCompanies = [
     year: '2017', 
     desc: 'Leading European software provider for social care and healthcare',
     detail: '100,000+ users across 6 European countries. Built through anchor investment and 8 add-on acquisitions to become the #1 platform in DACH and Benelux.',
-    sector: 'Healthcare',
+    sector: 'Healthcare & Life Science',
     url: 'https://myneva.eu'
   },
 ];
@@ -197,7 +197,7 @@ export default function App() {
               <div className="text-[#5a7fa6] text-sm">YEARS ACTIVE</div>
             </div>
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
-              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x05</div>
+              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x06</div>
               <div className="text-[#5a7fa6] text-sm">SECTORS COVERED</div>
             </div>
           </div>
@@ -213,11 +213,12 @@ export default function App() {
 {`// Core Focus Areas
 const THESIS = {
   sectors: [
-    'Vertical B2B Software',
     'Healthcare & Life Science',
-    'Energy & Sustainability',
+    'Construction Tech',
+    'Professional Services',
     'Cybersecurity',
-    'Professional Services Tech'
+    'Energy & Sustainability',
+    'Vertical SaaS'
   ],
   stage: 'Growth Equity & Buyout',
   approach: 'Buy-and-build platform strategy',
