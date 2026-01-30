@@ -78,18 +78,18 @@ const portfolioCompanies = [
   { 
     name: 'REALVIEW', 
     year: '2024', 
-    desc: 'Construction project management software',
-    detail: 'Swiss-based provider of modern solutions for construction project planning and execution.',
+    desc: 'Digital defect management for construction',
+    detail: 'Swiss-based software for construction managers. Automated documentation, real-time status tracking, and streamlined contractor communication.',
     sector: 'Construction Tech',
-    url: null
+    url: 'https://realview.ch'
   },
   { 
-    name: 'LocalBrandX', 
+    name: 'Local Brand X', 
     year: '2023', 
-    desc: 'Local marketing automation platform',
-    detail: 'Enabling brands to execute consistent local marketing at scale across distributed networks.',
+    desc: 'Platform for decentralized marketing',
+    detail: 'Enabling brands to collaborate with 50+ distribution partners. Centralized asset management with local customization for franchisees and retailers.',
     sector: 'Marketing Tech',
-    url: null
+    url: 'https://local-brand-x.com'
   },
   { 
     name: 'Cuseum', 
@@ -102,10 +102,10 @@ const portfolioCompanies = [
   { 
     name: 'MegaCAD', 
     year: '2024', 
-    desc: 'CAD software for building services engineering',
-    detail: 'Specialized CAD solutions including Bausoft acquisition for HVAC and building technology.',
+    desc: 'CAD software for mechanical engineering and metal construction',
+    detail: '35 years of industry expertise. Full value chain coverage from customer inquiry to assembly. Includes Bausoft acquisition for building technology.',
     sector: 'Construction Tech',
-    url: null
+    url: 'https://megacad.de'
   },
 ];
 
