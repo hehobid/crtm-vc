@@ -4,52 +4,12 @@ import { Terminal, ChevronDown, ExternalLink } from 'lucide-react';
 
 const portfolioCompanies = [
   { 
-    name: 'myneva', 
-    year: '2017', 
-    desc: 'Leading European software provider for social care and healthcare',
-    detail: '100,000+ users across 6 European countries. Built through anchor investment and 8 add-on acquisitions to become the #1 platform in DACH and Benelux.',
-    sector: 'Healthcare',
-    url: 'https://myneva.eu'
-  },
-  { 
-    name: 'EvidentIQ', 
-    year: '2019', 
-    desc: 'End-to-end eClinical solutions for life sciences',
-    detail: '3,500+ clinical studies, 25M patients across 83 countries. Trusted by 15 of the top 20 pharma companies worldwide.',
-    sector: 'Life Science',
-    url: 'https://evidentiq.com'
-  },
-  { 
-    name: 'JustRelate', 
-    year: '2020', 
-    desc: 'All-in-one customer experience platform for CRM and CMS',
-    detail: '100,000+ active users, 250+ enterprise customers. Integrated etracker for analytics capabilities.',
-    sector: 'B2B SaaS',
-    url: 'https://justrelate.com'
-  },
-  { 
-    name: 'eSight Energy', 
-    year: '2021', 
-    desc: 'Enterprise energy data management and sustainability',
-    detail: '33,000 users managing 260,000 buildings in 60 countries. Monitoring $5B+ in energy spend.',
-    sector: 'Energy Tech',
-    url: 'https://esightenergy.com'
-  },
-  { 
-    name: 'everii', 
-    year: '2022', 
-    desc: 'Leading CRM/ERP platform for agencies and professional services',
-    detail: '10,000+ CRM customers. #1 in DACH for agencies and consultancies with 80%+ recurring revenue.',
-    sector: 'B2B SaaS',
-    url: 'https://hellohq.io'
-  },
-  { 
-    name: 'Nextron Systems', 
-    year: '2022', 
-    desc: 'Advanced threat detection and forensic analysis',
-    detail: 'Industry-leading detection rates for APTs, malware, and compromise assessment. German-engineered security.',
-    sector: 'Cybersecurity',
-    url: 'https://nextron-systems.com'
+    name: 'Local Brand X', 
+    year: '2026', 
+    desc: 'Platform for decentralized marketing',
+    detail: 'Enabling brands to collaborate with 50+ distribution partners. Centralized asset management with local customization for franchisees and retailers.',
+    sector: 'Marketing Tech',
+    url: 'https://local-brand-x.com'
   },
   { 
     name: 'TinyMDM', 
@@ -84,12 +44,12 @@ const portfolioCompanies = [
     url: 'https://realview.ch'
   },
   { 
-    name: 'Local Brand X', 
-    year: '2023', 
-    desc: 'Platform for decentralized marketing',
-    detail: 'Enabling brands to collaborate with 50+ distribution partners. Centralized asset management with local customization for franchisees and retailers.',
-    sector: 'Marketing Tech',
-    url: 'https://local-brand-x.com'
+    name: 'MegaCAD', 
+    year: '2024', 
+    desc: 'CAD software for mechanical engineering and metal construction',
+    detail: '35 years of industry expertise. Full value chain coverage from customer inquiry to assembly. Includes Bausoft acquisition for building technology.',
+    sector: 'Construction Tech',
+    url: 'https://megacad.de'
   },
   { 
     name: 'Cuseum', 
@@ -100,12 +60,52 @@ const portfolioCompanies = [
     url: 'https://cuseum.com'
   },
   { 
-    name: 'MegaCAD', 
-    year: '2024', 
-    desc: 'CAD software for mechanical engineering and metal construction',
-    detail: '35 years of industry expertise. Full value chain coverage from customer inquiry to assembly. Includes Bausoft acquisition for building technology.',
-    sector: 'Construction Tech',
-    url: 'https://megacad.de'
+    name: 'everii', 
+    year: '2022', 
+    desc: 'Leading CRM/ERP platform for agencies and professional services',
+    detail: '10,000+ CRM customers. #1 in DACH for agencies and consultancies with 80%+ recurring revenue.',
+    sector: 'B2B SaaS',
+    url: 'https://hellohq.io'
+  },
+  { 
+    name: 'Nextron Systems', 
+    year: '2022', 
+    desc: 'Advanced threat detection and forensic analysis',
+    detail: 'Industry-leading detection rates for APTs, malware, and compromise assessment. German-engineered security.',
+    sector: 'Cybersecurity',
+    url: 'https://nextron-systems.com'
+  },
+  { 
+    name: 'eSight Energy', 
+    year: '2021', 
+    desc: 'Enterprise energy data management and sustainability',
+    detail: '33,000 users managing 260,000 buildings in 60 countries. Monitoring $5B+ in energy spend.',
+    sector: 'Energy Tech',
+    url: 'https://esightenergy.com'
+  },
+  { 
+    name: 'JustRelate', 
+    year: '2020', 
+    desc: 'All-in-one customer experience platform for CRM and CMS',
+    detail: '100,000+ active users, 250+ enterprise customers. Integrated etracker for analytics capabilities.',
+    sector: 'B2B SaaS',
+    url: 'https://justrelate.com'
+  },
+  { 
+    name: 'EvidentIQ', 
+    year: '2019', 
+    desc: 'End-to-end eClinical solutions for life sciences',
+    detail: '3,500+ clinical studies, 25M patients across 83 countries. Trusted by 15 of the top 20 pharma companies worldwide.',
+    sector: 'Life Science',
+    url: 'https://evidentiq.com'
+  },
+  { 
+    name: 'myneva', 
+    year: '2017', 
+    desc: 'Leading European software provider for social care and healthcare',
+    detail: '100,000+ users across 6 European countries. Built through anchor investment and 8 add-on acquisitions to become the #1 platform in DACH and Benelux.',
+    sector: 'Healthcare',
+    url: 'https://myneva.eu'
   },
 ];
 
