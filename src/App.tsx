@@ -83,11 +83,11 @@ export default function App() {
               <div className="text-[#5a7fa6] text-sm">PORTFOLIO COMPANIES</div>
             </div>
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
-              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">PRIVATE</div>
-              <div className="text-[#5a7fa6] text-sm">ASSETS UNDER MANAGEMENT</div>
+              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x0A</div>
+              <div className="text-[#5a7fa6] text-sm">YEARS ACTIVE</div>
             </div>
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
-              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0b0011</div>
+              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x04</div>
               <div className="text-[#5a7fa6] text-sm">SECTORS COVERED</div>
             </div>
           </div>
