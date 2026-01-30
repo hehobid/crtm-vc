@@ -79,7 +79,7 @@ export default function App() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
-              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x03</div>
+              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x0D</div>
               <div className="text-[#5a7fa6] text-sm">PORTFOLIO COMPANIES</div>
             </div>
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
@@ -87,7 +87,7 @@ export default function App() {
               <div className="text-[#5a7fa6] text-sm">YEARS ACTIVE</div>
             </div>
             <div className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-colors">
-              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x04</div>
+              <div className="text-3xl font-bold mb-2 text-[#00d4ff]">0x05</div>
               <div className="text-[#5a7fa6] text-sm">SECTORS COVERED</div>
             </div>
           </div>
