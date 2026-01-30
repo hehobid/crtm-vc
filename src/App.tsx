@@ -1,16 +1,118 @@
 import { useEffect, useState } from 'react';
 import { Skyline } from './components/Skyline';
-import { Terminal } from 'lucide-react';
+import { Terminal, ChevronDown, ExternalLink } from 'lucide-react';
 
 const portfolioCompanies = [
-  { name: 'helloHQ', year: '2016', desc: 'All-in-one agency management software', stage: 'GROWTH', sector: 'B2B SaaS' },
-  { name: 'Clawdbot', year: '2024', desc: 'AI-powered personal assistant framework', stage: 'SEED', sector: 'AI/ML' },
-  { name: 'BIDEQU', year: '2020', desc: 'Digital equity management platform', stage: 'SERIES A', sector: 'Fintech' },
+  { 
+    name: 'myneva', 
+    year: '2017', 
+    desc: 'Leading European software provider for social care and healthcare',
+    detail: '100,000+ users across 6 European countries. Built through anchor investment and 8 add-on acquisitions to become the #1 platform in DACH and Benelux.',
+    sector: 'Healthcare',
+    url: 'https://myneva.eu'
+  },
+  { 
+    name: 'EvidentIQ', 
+    year: '2019', 
+    desc: 'End-to-end eClinical solutions for life sciences',
+    detail: '3,500+ clinical studies, 25M patients across 83 countries. Trusted by 15 of the top 20 pharma companies worldwide.',
+    sector: 'Life Science',
+    url: 'https://evidentiq.com'
+  },
+  { 
+    name: 'JustRelate', 
+    year: '2020', 
+    desc: 'All-in-one customer experience platform for CRM and CMS',
+    detail: '100,000+ active users, 250+ enterprise customers. Integrated etracker for analytics capabilities.',
+    sector: 'B2B SaaS',
+    url: 'https://justrelate.com'
+  },
+  { 
+    name: 'eSight Energy', 
+    year: '2021', 
+    desc: 'Enterprise energy data management and sustainability',
+    detail: '33,000 users managing 260,000 buildings in 60 countries. Monitoring $5B+ in energy spend.',
+    sector: 'Energy Tech',
+    url: 'https://esightenergy.com'
+  },
+  { 
+    name: 'everii', 
+    year: '2022', 
+    desc: 'Leading CRM/ERP platform for agencies and professional services',
+    detail: '10,000+ CRM customers. #1 in DACH for agencies and consultancies with 80%+ recurring revenue.',
+    sector: 'B2B SaaS',
+    url: 'https://hellohq.io'
+  },
+  { 
+    name: 'Nextron Systems', 
+    year: '2022', 
+    desc: 'Advanced threat detection and forensic analysis',
+    detail: 'Industry-leading detection rates for APTs, malware, and compromise assessment. German-engineered security.',
+    sector: 'Cybersecurity',
+    url: 'https://nextron-systems.com'
+  },
+  { 
+    name: 'TinyMDM', 
+    year: '2025', 
+    desc: 'Simplified Android mobile device management',
+    detail: 'Intuitive MDM solution with kiosk mode, app management, and security compliance for enterprise fleets.',
+    sector: 'Enterprise Tech',
+    url: 'https://tinymdm.net'
+  },
+  { 
+    name: 'Insurgo', 
+    year: '2025', 
+    desc: 'Cloud-based insurance broker management platform',
+    detail: 'AI-powered document processing, customer portals, and automated workflows for modern insurance brokers.',
+    sector: 'Insurtech',
+    url: 'https://insurgo.de'
+  },
+  { 
+    name: 'Crisalix', 
+    year: '2025', 
+    desc: '3D simulation software for aesthetic medicine',
+    detail: 'World-leading 3D visualization for cosmetic surgery planning. Used by surgeons globally.',
+    sector: 'Healthcare',
+    url: 'https://crisalix.com'
+  },
+  { 
+    name: 'REALVIEW', 
+    year: '2024', 
+    desc: 'Construction project management software',
+    detail: 'Swiss-based provider of modern solutions for construction project planning and execution.',
+    sector: 'Construction Tech',
+    url: null
+  },
+  { 
+    name: 'LocalBrandX', 
+    year: '2023', 
+    desc: 'Local marketing automation platform',
+    detail: 'Enabling brands to execute consistent local marketing at scale across distributed networks.',
+    sector: 'Marketing Tech',
+    url: null
+  },
+  { 
+    name: 'Cuseum', 
+    year: '2023', 
+    desc: 'Visitor and member engagement for cultural institutions',
+    detail: 'Digital membership, mobile engagement, and AR solutions for museums and cultural organizations worldwide.',
+    sector: 'Culture Tech',
+    url: 'https://cuseum.com'
+  },
+  { 
+    name: 'MegaCAD', 
+    year: '2024', 
+    desc: 'CAD software for building services engineering',
+    detail: 'Specialized CAD solutions including Bausoft acquisition for HVAC and building technology.',
+    sector: 'Construction Tech',
+    url: null
+  },
 ];
 
 export default function App() {
   const [displayText, setDisplayText] = useState('');
   const [showImprint, setShowImprint] = useState(false);
+  const [expandedCompany, setExpandedCompany] = useState<number | null>(null);
   const fullText = '> COURTMASTER VENTURES';
 
   useEffect(() => {
@@ -126,21 +228,50 @@ const THESIS = {
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
             <span className="text-[#5a7fa6]">{'>'}</span> PORTFOLIO
           </h2>
-          <div className="grid gap-4">
+          <div className="grid gap-3">
             {portfolioCompanies.map((company, i) => (
               <div 
                 key={i}
-                className="border border-[#1e3a5f] bg-[#0d1b2a]/50 p-6 backdrop-blur hover:border-[#00ff9f]/50 transition-all hover:translate-x-2 cursor-pointer"
+                className={`border bg-[#0d1b2a]/50 backdrop-blur transition-all cursor-pointer ${
+                  expandedCompany === i ? 'border-[#00ff9f]' : 'border-[#1e3a5f] hover:border-[#00ff9f]/50'
+                }`}
+                onClick={() => setExpandedCompany(expandedCompany === i ? null : i)}
               >
-                <div className="flex items-start justify-between mb-2">
-                  <span className="text-xl font-bold">{company.name}</span>
-                  <span className="text-[#5a7fa6] text-sm">{company.year}</span>
+                <div className="p-5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <span className="text-lg font-bold">{company.name}</span>
+                      <span className="text-xs px-2 py-1 border border-[#5a7fa6]/30 text-[#5a7fa6]">{company.sector}</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <span className="text-[#5a7fa6] text-sm">{company.year}</span>
+                      <ChevronDown 
+                        className={`w-5 h-5 text-[#5a7fa6] transition-transform ${
+                          expandedCompany === i ? 'rotate-180' : ''
+                        }`} 
+                      />
+                    </div>
+                  </div>
+                  <p className="text-[#5a7fa6] text-sm mt-2">{company.desc}</p>
                 </div>
-                <p className="text-[#5a7fa6] mb-3">{company.desc}</p>
-                <div className="flex gap-3">
-                  <span className="text-xs px-2 py-1 border border-[#00ff9f]/30 text-[#00ff9f]">{company.stage}</span>
-                  <span className="text-xs px-2 py-1 border border-[#5a7fa6]/30 text-[#5a7fa6]">{company.sector}</span>
-                </div>
+                
+                {expandedCompany === i && (
+                  <div className="px-5 pb-5 border-t border-[#1e3a5f] pt-4">
+                    <p className="text-[#5a7fa6] text-sm mb-4">{company.detail}</p>
+                    {company.url && (
+                      <a 
+                        href={company.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-2 text-[#00d4ff] hover:text-[#00ff9f] transition-colors text-sm"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        {company.url.replace('https://', '')}
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             ))}
           </div>
