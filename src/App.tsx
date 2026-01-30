@@ -10,6 +10,7 @@ const portfolioCompanies = [
 
 export default function App() {
   const [displayText, setDisplayText] = useState('');
+  const [showImprint, setShowImprint] = useState(false);
   const fullText = '> COURTMASTER VENTURES';
 
   useEffect(() => {
@@ -165,8 +166,16 @@ const THESIS = {
 
         {/* Footer */}
         <footer className="border-t border-[#1e3a5f] bg-[#0d1b2a]/90 backdrop-blur">
-          <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between text-sm text-[#5a7fa6]">
-            <span>© 2024 Courtmaster Ventures GmbH. All rights reserved.</span>
+          <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#5a7fa6]">
+            <div className="flex items-center gap-4">
+              <span>© 2025 Courtmaster Ventures GmbH</span>
+              <button 
+                onClick={() => setShowImprint(true)}
+                className="hover:text-[#00d4ff] transition-colors underline underline-offset-2"
+              >
+                Impressum
+              </button>
+            </div>
             <div className="flex items-center gap-2">
               <span>STATUS:</span>
               <span className="text-[#00ff9f] flex items-center gap-1">
@@ -176,6 +185,55 @@ const THESIS = {
             </div>
           </div>
         </footer>
+
+        {/* Impressum Modal */}
+        {showImprint && (
+          <div 
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm"
+            onClick={() => setShowImprint(false)}
+          >
+            <div 
+              className="border border-[#1e3a5f] bg-[#0d1b2a] p-8 max-w-lg mx-4 max-h-[80vh] overflow-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-xl font-bold">{'>'} IMPRESSUM</h3>
+                <button 
+                  onClick={() => setShowImprint(false)}
+                  className="text-[#5a7fa6] hover:text-[#00ff9f] transition-colors text-2xl leading-none"
+                >
+                  ×
+                </button>
+              </div>
+              <div className="space-y-4 text-sm text-[#5a7fa6]">
+                <div>
+                  <div className="text-[#00ff9f] mb-1">Angaben gemäß § 5 TMG</div>
+                  <p>courtmaster ventures GmbH</p>
+                  <p>Hochallee 23</p>
+                  <p>20149 Hamburg</p>
+                </div>
+                <div>
+                  <div className="text-[#00ff9f] mb-1">Vertreten durch</div>
+                  <p>Geschäftsführer: Dr. Helge Hofmeister</p>
+                </div>
+                <div>
+                  <div className="text-[#00ff9f] mb-1">Kontakt</div>
+                  <p>E-Mail: hello@crtm.vc</p>
+                </div>
+                <div>
+                  <div className="text-[#00ff9f] mb-1">Registereintrag</div>
+                  <p>Eintragung im Handelsregister</p>
+                  <p>Registergericht: Amtsgericht Hamburg</p>
+                  <p>Registernummer: HRB 142666</p>
+                </div>
+                <div className="pt-4 border-t border-[#1e3a5f] text-xs">
+                  <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
+                  <p>Dr. Helge Hofmeister, Hochallee 23, 20149 Hamburg</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
