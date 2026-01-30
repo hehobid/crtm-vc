@@ -8,7 +8,7 @@ const portfolioCompanies = [
     year: '2026', 
     desc: 'Platform for decentralized marketing',
     detail: 'Enabling brands to collaborate with 50+ distribution partners. Centralized asset management with local customization for franchisees and retailers.',
-    sector: 'Vertical SaaS',
+    sector: 'Go-to-Market',
     url: 'https://local-brand-x.com'
   },
   { 
@@ -16,7 +16,7 @@ const portfolioCompanies = [
     year: '2025', 
     desc: 'Simplified Android mobile device management',
     detail: 'Intuitive MDM solution with kiosk mode, app management, and security compliance for enterprise fleets.',
-    sector: 'Vertical SaaS',
+    sector: 'Cybersecurity & IT',
     url: 'https://tinymdm.net'
   },
   { 
@@ -64,7 +64,7 @@ const portfolioCompanies = [
     year: '2022', 
     desc: 'Leading CRM/ERP platform for agencies and professional services',
     detail: '10,000+ CRM customers. #1 in DACH for agencies and consultancies with 80%+ recurring revenue.',
-    sector: 'Professional Services',
+    sector: 'Go-to-Market',
     url: 'https://hellohq.io'
   },
   { 
@@ -72,7 +72,7 @@ const portfolioCompanies = [
     year: '2022', 
     desc: 'Advanced threat detection and forensic analysis',
     detail: 'Industry-leading detection rates for APTs, malware, and compromise assessment. German-engineered security.',
-    sector: 'Cybersecurity',
+    sector: 'Cybersecurity & IT',
     url: 'https://nextron-systems.com'
   },
   { 
@@ -88,7 +88,7 @@ const portfolioCompanies = [
     year: '2020', 
     desc: 'All-in-one customer experience platform for CRM and CMS',
     detail: '100,000+ active users, 250+ enterprise customers. Integrated etracker for analytics capabilities.',
-    sector: 'Professional Services',
+    sector: 'Go-to-Market',
     url: 'https://justrelate.com'
   },
   { 
@@ -215,8 +215,8 @@ const THESIS = {
   sectors: [
     'Healthcare & Life Science',
     'Construction Tech',
-    'Professional Services',
-    'Cybersecurity',
+    'Go-to-Market',
+    'Cybersecurity & IT',
     'Energy & Sustainability',
     'Vertical SaaS'
   ],
