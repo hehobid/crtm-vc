@@ -301,7 +301,7 @@ const THESIS = {
         <footer className="border-t border-[#1e3a5f] bg-[#0d1b2a]/90 backdrop-blur">
           <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#5a7fa6]">
             <div className="flex items-center gap-4">
-              <span>© 2025 Courtmaster Ventures GmbH</span>
+              <span>© 2026 Courtmaster Ventures GmbH</span>
               <button 
                 onClick={() => setShowImprint(true)}
                 className="hover:text-[#00d4ff] transition-colors underline underline-offset-2"
