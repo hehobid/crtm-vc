@@ -228,7 +228,11 @@ const THESIS = {
           <h2 className="text-3xl font-bold mb-2 flex items-center gap-3">
             <span className="text-[#5a7fa6]">{'>'}</span> PORTFOLIO
           </h2>
-          <p className="text-[#5a7fa6] text-sm mb-8 font-mono">{'> $ sudo bid-equity --list'}</p>
+          <p className="text-[#5a7fa6] text-sm mb-8 font-mono">
+            {'> $ sudo '}
+            <a href="https://bidequity.de" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ff9f] transition-colors">bid-equity</a>
+            {' --list'}
+          </p>
           <div className="grid gap-3">
             {portfolioCompanies.map((company, i) => (
               <div 
